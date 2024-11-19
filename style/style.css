@@ -65,6 +65,21 @@
 }
 /* Font styles ends here */
 
+.btn{
+    background-color: #FF5400;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+span{
+    color: #FF5400;
+}
 .logo{
     height:50px; 
     margin-right:16px;
@@ -73,15 +88,98 @@
 .HorizontalRule{
     width: 872px;
 }
-
+body{
+    margin: auto 60px;
+}
 /* shared styles ends here */
 
+.nlDiv1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 41px;
+    border: 1px solid #FF5400;
+    border-radius: 15px;
+    width: 474px;
+    height: 422px;
+}
+
+.nlDiv1h3{
+    font-size: 1.5rem;
+}
+.inputField{
+    margin: 5px auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 251px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.newsletter{
+    display: flex;
+    gap: 25px;
+    margin: 100px auto; 
+
+}
+
+
+
+
+/* newsletter styles ends here */
 footer{
-    height: 380px;
+    height: 360px;
     justify-items: center;
     background-color: #80ed9952;
 }
 .FooterDiv1{
     display: flex;
     align-items: center;
+}
+/* footer styles ends here */
+
+@media screen and (max-width: 576px) {
+
+    /*newsletter styles here  */
+    .newsletter{
+        flex-direction: column;
+    
+    }
+    .nlDiv1{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: auto;
+        padding-right: auto;
+        border: 1px solid #FF5400;
+        border-radius: 15px;
+        width: 374px;
+        height: 422px;
+    }
+
+    .inputField{
+        margin: 5px auto;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+    .btn{
+        padding-left: 154px;
+        padding-right: 154px;
+
+    }
+    /* footer styles here */
+    footer{
+        padding: 20px;
+    }
+    .FooterDiv1{
+        align-items: center;
+    }
+    .HorizontalRule{
+        width: 486px;
+    }
+
+    
 }
