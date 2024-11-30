@@ -101,7 +101,92 @@ body {
     font-weight: 900;
 }
 
+.descriptionColor {
+    color: #5A5A5D;
+}
+
+.color {
+    color: #FF5400;
+}
+
 /* shared styles ends here */
+
+.dd {
+    justify-items: center;
+
+}
+
+.card {
+    backdrop-filter: blur(20px);
+    background-color: (255, 255, 255, 0.5);
+    position: absolute;
+    right: 30px;
+    bottom: 104px;
+    border: 1px solid orange;
+    border-radius: 25px;
+    padding: 30px 63px;
+    width: 479px;
+    height: 280px;
+
+}
+
+.cardDescription {
+    color: #5A5A5D;
+}
+
+.cardPrice {
+    color: #FF5400;
+    font-size: 1.3rem;
+}
+
+.ddDiv1img {
+    width: 100%;
+    height: 100%;
+}
+
+.ddDiv1 {
+    position: relative;
+}
+
+.ddDiv2 {
+    position: relative;
+}
+
+.card2 {
+    backdrop-filter: blur(20px);
+    background-color: (255, 255, 255, 0.5);
+    position: absolute;
+    left: 45px;
+    top: 45px;
+    border: 1px solid orange;
+    border-radius: 25px;
+    padding: 30px 63px;
+    width: 479px;
+    height: 280px;
+
+}
+
+.ddDiv3 {
+    position: relative;
+}
+
+.card3 {
+    backdrop-filter: blur(20px);
+    background-color: (255, 255, 255, 0.5);
+    position: absolute;
+    right: 30px;
+    bottom: 104px;
+    border: 1px solid orange;
+    border-radius: 25px;
+    padding: 30px 63px;
+    width: 479px;
+    height: 280px;
+}
+
+
+
+
+/* deals and discounts styles ends here */
 .combine {
     margin: 100px auto;
     display: flex;
@@ -110,10 +195,6 @@ body {
 
 .comboDiv1 {
     padding: 12px;
-}
-
-.descriptionColor {
-    color: #5A5A5D;
 }
 
 .pointColor {
@@ -157,6 +238,38 @@ body {
 
 }
 
+.nlDiv2 {
+    position: relative;
+    display: inline-block;
+
+}
+
+.div2TextOverlay {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    background-color: #FF5400;
+    color: white;
+    padding: 23px 60px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 15px;
+    transform: rotate(-20deg);
+    /* Rotate the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.nlDiv1 {
+    border: 1px solid red;
+}
+
+.nlDiv2img {
+    display: block;
+    width: 100%;
+    height: 506px;
+}
+
 .newsletter {
     display: flex;
     gap: 25px;
@@ -183,11 +296,30 @@ footer {
 
 @media screen and (max-width: 576px) {
 
+
+    .ddDiv1img,
+    .ddDiv2img, .ddDiv3img {
+        width: 453px;
+        height: 490px;
+    }
+
+    .card,
+    .card2, .card3 {
+        width: 203px;
+        height: 340px;
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+    }
+
+
+
     /* combine styles here */
     .combine {
         flex-direction: column;
 
     }
+
     /*newsletter styles here  */
     .newsletter {
         flex-direction: column;
