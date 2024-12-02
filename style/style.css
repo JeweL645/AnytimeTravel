@@ -112,7 +112,38 @@ body {
 /* shared styles ends here */
 
 
+.cyd{
+    justify-items: center;
+}
+.row1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-bottom: 40px;
+}
+.row2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-bottom: 40px;
+}
+.row3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.ImgAndText{
+    position: relative;
+}
+
+.textOverlay{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    font-size: 1.5rem;
+
+}
 
 
 /* Choose your destination style ends here */
@@ -124,8 +155,7 @@ body {
 
 .desCardContainer {
 
-    border: 1px solid black;
-    justify-items: center;
+     justify-items: center;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 35px;
@@ -138,7 +168,6 @@ body {
     border-radius: 15px;
     padding: 10px 10px;
     display: inline-block;
-    border: 1px solid red;
     width: 473px;
     height: 284px;
 }
@@ -359,6 +388,14 @@ footer {
         right: 50px;
         bottom: 50px;
     }
+    /* choose your destination styles here */
+    .row1, .row2, .row3{
+        grid-template-columns: 1fr;
+    }
+
+
+
+
     /* Why choose us styles here */
     .desCardContainer{
         grid-template-columns: 1fr;
