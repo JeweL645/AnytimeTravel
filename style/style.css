@@ -110,8 +110,12 @@ body {
 }
 
 /* shared styles ends here */
-
-
+.opt{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* opt styles ends here */
 .cyd{
     justify-items: center;
 }
@@ -388,6 +392,11 @@ footer {
         right: 50px;
         bottom: 50px;
     }
+    /* Our popular tour style */
+    .opt{
+        flex-direction: column;
+    }
+
     /* choose your destination styles here */
     .row1, .row2, .row3{
         grid-template-columns: 1fr;
