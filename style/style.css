@@ -102,7 +102,7 @@ body {
 }
 
 .descriptionColor {
-    color: #5A5A5D;
+    color: #5a5a5dad;
 }
 
 .color {
@@ -110,6 +110,49 @@ body {
 }
 
 /* shared styles ends here */
+
+
+
+
+
+/* Choose your destination style ends here */
+.wcu {
+    justify-items: center;
+
+    
+}
+
+.desCardContainer {
+
+    border: 1px solid black;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+
+
+}
+
+.desCard {
+    background-color: #9eaba269;
+    border-radius: 15px;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid red;
+    width: 473px;
+    height: 284px;
+}
+
+.CardNo3{
+    position: relative;
+    left: 250px;
+
+}
+
+
+
+
+/* Why choose us section ends here */
 
 .dd {
     justify-items: center;
@@ -187,6 +230,9 @@ body {
 
 
 /* deals and discounts styles ends here */
+
+
+
 .combine {
     margin: 100px auto;
     display: flex;
@@ -298,18 +344,30 @@ footer {
 
 
     .ddDiv1img,
-    .ddDiv2img, .ddDiv3img {
+    .ddDiv2img,
+    .ddDiv3img {
         width: 453px;
         height: 490px;
     }
 
     .card,
-    .card2, .card3 {
+    .card2,
+    .card3 {
         width: 203px;
         height: 340px;
         position: absolute;
         right: 50px;
         bottom: 50px;
+    }
+    /* Why choose us styles here */
+    .desCardContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .CardNo3{
+        position: relative;
+        left: 0px;
+    
     }
 
 
