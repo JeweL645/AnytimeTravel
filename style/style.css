@@ -109,14 +109,114 @@ body {
     color: #FF5400;
 }
 
+.Big{
+    font-size: 2.2rem;
+}
+
 /* shared styles ends here */
+
+.Brand{
+    display: flex;
+    align-items: center;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: relative;
+
+}
+
+.navLinks{
+    list-style: none;
+    display: flex;
+
+
+}
+
+.navLinks li{
+    margin: 0 1rem;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    color: #ffa500;
+}
+
+.spFont{
+    font-size: 64px;
+    color: white;
+}
+.spDes{
+    color: white;
+}
+/* .normalBtn {
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 8px;
+    background: #FF5400;
+    width: 174px;
+    height: 52px;
+} */
+.spInput{
+    border-radius: 8px;
+    color: white;
+    font-size: 1.3rem;
+    width: 174px;
+    height: 52px;
+}
+.spSelect{
+    border-radius: 8px;
+    font-size: 1.3rem;
+    width: 174px;
+    height: 52px;
+
+}
+.spUl{
+    display: flex;
+    background-color: rgba(51, 35, 35, 0.438);
+    padding: 10px;
+    width: 750px;
+    justify-items: center;
+    border-radius: 10px;
+}
+.spUl li{
+    list-style: none;
+    margin: 0 5px;
+}
+.banner{
+    position: relative;
+}
+.bannerTextAndInput{
+    text-align: center;
+   justify-items: center;
+   width: 850px;
+   position: absolute;
+   bottom: 75px;
+   margin-left: 170px;
+
+
+
+}
+header{
+    margin-bottom: 100px;
+}
+
+/* header styles ends here */
 .opt{
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 /* opt styles ends here */
 .cyd{
+    margin-bottom: 100px;
     justify-items: center;
 }
 .row1{
@@ -153,7 +253,7 @@ body {
 /* Choose your destination style ends here */
 .wcu {
     justify-items: center;
-
+    margin-bottom: 100px;
     
 }
 
@@ -189,7 +289,7 @@ body {
 
 .dd {
     justify-items: center;
-
+    margin-bottom: 100px;
 }
 
 .card {
@@ -292,6 +392,23 @@ body {
 
 /* combine styles ends here */
 
+.reviews{
+    text-align: center;
+    margin: 100px auto;
+}
+
+.reviewCard{
+    border: 1px solid #FF5400;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px 5px #FF5400;
+    width: 300px;
+
+}
+.reviewCardContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Review section styles here */
 .nlDiv1 {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -392,6 +509,40 @@ footer {
         right: 50px;
         bottom: 50px;
     }
+    /* navigation styles here */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 150px;
+        padding: 0.5rem;
+        border-radius: 8px;
+    }
+    header{
+        width: 336px;
+    }
+    .banner{
+        width: 335px;
+        height: 483px;
+    }
+    .bannerTextAndInput{
+        width: 288px;
+        height: 448px;
+    }
+    .spUl{
+        flex-direction: column;
+        width: 250px;
+
+    }
+    .spFont{
+        color: black;
+        font-size: 45px;
+
+
+    }
     /* Our popular tour style */
     .opt{
         flex-direction: column;
@@ -402,7 +553,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
-
+    .reviewCardContainer{
+        flex-direction: column;
+        gap: 15px;
+    }
 
 
     /* Why choose us styles here */
